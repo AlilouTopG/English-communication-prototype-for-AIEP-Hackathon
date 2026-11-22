@@ -1238,6 +1238,8 @@ html.land #workspaceApp { display:none !important; }
 .rs-code.sm { font-size:.68rem; padding:.1rem .4rem; }
 .rs-subs { margin:.7rem 0 0; padding-inline-start:1rem; border-inline-start:2px solid var(--line-strong); display:grid; gap:.6rem; }
 #rs-tree svg { max-width:100%; }
+/* ===== English-focus build: non-language studios hidden from the UI ===== */
+#nav [data-nav="code"], #nav [data-nav="research"], .qa[data-go="code"], .qa[data-go="research"], [data-act="domain"][data-domain="stem"], #tabbar [data-tabws="code"] { display:none !important; }
 </style>
 <script>try{if(!localStorage.getItem("nexascholar.seen"))document.documentElement.classList.add("land")}catch(e){document.documentElement.classList.add("land")}</script>
 </head>
@@ -1252,9 +1254,9 @@ html.land #workspaceApp { display:none !important; }
       <div class="l-top"><div class="l-logo"><b>N</b>NexaScholar AI</div><button class="l-pill ghost sm" data-land="enter">Open Workspace</button></div>
     </div>
     <div class="l-wrap l-center">
-      <h1 class="l-h1">Master every lecture. Ship every idea.</h1>
-      <p class="l-sub">Trilingual study guides in English, French and Arabic, scanned-PDF OCR, line-by-line code logic, pitch coaching and CEFR exams, all in one glass workspace built for engineering students.</p>
-      <div class="l-cta"><button class="l-pill solid" data-land="enter">Launch Workspace &#8599;</button><button class="l-pill ghost" data-land="sample">Try a sample lecture</button></div>
+      <h1 class="l-h1">Speak with confidence. Write like a scholar.</h1>
+      <p class="l-sub">Master English for university and your career: adaptive CEFR placement from A1 to C2, level-aware lessons, sentence deconstruction, academic writing feedback, and a live AI speaking coach for pitches and presentations.</p>
+      <div class="l-cta"><button class="l-pill solid" data-land="enter">Launch Workspace &#8599;</button><button class="l-pill ghost" data-land="sample">Try a sample sentence</button></div>
     </div>
     <button class="l-scroll" data-land="scroll" aria-label="Scroll down"><span>Scroll down</span><span class="l-mouse"></span></button>
   </section>
@@ -1264,9 +1266,9 @@ html.land #workspaceApp { display:none !important; }
       <div class="l-eye">EXPLORE NEXASCHOLAR</div>
       <h2 class="l-h2">Start with a studio</h2>
       <div class="l-grid">
-        <button class="l-card l-glass" data-land="go" data-go="paper"><span class="ic"><i data-lucide="book-open-text" class="w-5 h-5"></i></span><h3>Paper &amp; Concepts Studio</h3><p>Trilingual breakdowns, LaTeX &amp; Mermaid diagrams</p><span class="go">Open studio &#8594;</span></button>
-        <button class="l-card l-glass" data-land="go" data-go="code"><span class="ic"><i data-lucide="square-terminal" class="w-5 h-5"></i></span><h3>Code &amp; Logic Studio</h3><p>Line-by-line execution flow &amp; debugging</p><span class="go">Open studio &#8594;</span></button>
-        <button class="l-card l-glass" data-land="go" data-go="pres"><span class="ic"><i data-lucide="presentation" class="w-5 h-5"></i></span><h3>Presentations &amp; Pitch Studio</h3><p>Slide decks, teleprompter &amp; delivery coach</p><span class="go">Open studio &#8594;</span></button>
+        <button class="l-card l-glass" data-land="go" data-go="lab" data-tab="level_lesson"><span class="ic"><i data-lucide="graduation-cap" class="w-5 h-5"></i></span><h3>CEFR Level Lessons</h3><p>Grammar and academic vocabulary lessons with drills, A1 to C2</p><span class="go">Open lessons &#8594;</span></button>
+        <button class="l-card l-glass" data-land="go" data-go="lab" data-tab="upgrade"><span class="ic"><i data-lucide="wand-sparkles" class="w-5 h-5"></i></span><h3>Academic Writing Upgrade</h3><p>Colour-coded feedback that lifts your draft to a higher level</p><span class="go">Open studio &#8594;</span></button>
+        <button class="l-card l-glass" data-land="go" data-go="pres"><span class="ic"><i data-lucide="presentation" class="w-5 h-5"></i></span><h3>Presentations &amp; Pitch Studio</h3><p>Live AI speaking coach, teleprompter &amp; delivery feedback</p><span class="go">Open studio &#8594;</span></button>
         <button class="l-card l-glass" data-land="go" data-go="lab" data-tab="exam"><span class="ic"><i data-lucide="award" class="w-5 h-5"></i></span><h3>CEFR Language Exam</h3><p>Adaptive A1&ndash;C2 placement &amp; level certification</p><span class="go">Open exam &#8594;</span></button>
       </div>
     </div>
@@ -1275,22 +1277,22 @@ html.land #workspaceApp { display:none !important; }
   <section class="l-sec" id="land-s3">
     <div class="l-wrap">
       <div class="l-eye">HOW IT WORKS</div>
-      <h2 class="l-h2">From raw material to real fluency</h2>
+      <h2 class="l-h2">From first test to confident delivery</h2>
       <div class="l-flow">
         <div class="l-sticky"><div class="l-radar" id="land-radar" aria-hidden="true">
           <div class="l-ring r1"></div><div class="l-ring r2"></div>
           <div class="l-orbit">
-            <div class="l-slot" style="--a:0deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="1">PDF / OCR</span></div></div></div>
-            <div class="l-slot" style="--a:90deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="2">LaTeX &amp; Diagrams</span></div></div></div>
-            <div class="l-slot" style="--a:180deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="3a">Anki &amp; SRS</span></div></div></div>
-            <div class="l-slot" style="--a:270deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="3b">Pitch &amp; CEFR</span></div></div></div>
+            <div class="l-slot" style="--a:0deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="1">CEFR Placement</span></div></div></div>
+            <div class="l-slot" style="--a:90deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="2">Writing Feedback</span></div></div></div>
+            <div class="l-slot" style="--a:180deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="3a">Speaking Coach</span></div></div></div>
+            <div class="l-slot" style="--a:270deg"><div class="l-nd"><div class="l-nd-in"><span class="l-chip" data-node="3b">Exam &amp; SRS</span></div></div></div>
           </div>
-          <div class="l-core">NexaScholar<br>Core<small>Synthesis engine</small></div>
+          <div class="l-core">NexaScholar<br>Core<small>English engine</small></div>
         </div></div>
         <div id="land-steps">
-          <div class="l-step on" data-step="1"><div class="n">01</div><div class="k">Ingest &amp; OCR</div><p>Drop dense lectures, scanned PDFs, or raw code.</p></div>
-          <div class="l-step" data-step="2"><div class="n">02</div><div class="k">Synthesize &amp; Visualize</div><p>Turn complex theory into trilingual notes, formulas, and clickable flowcharts.</p></div>
-          <div class="l-step" data-step="3"><div class="n">03</div><div class="k">Retain &amp; Deliver</div><p>Lock knowledge in with Anki decks, spaced repetition, CEFR exams, and live pitch coaching.</p></div>
+          <div class="l-step on" data-step="1"><div class="n">01</div><div class="k">Place &amp; Diagnose</div><p>Take the adaptive A1&ndash;C2 placement exam to find your true English level.</p></div>
+          <div class="l-step" data-step="2"><div class="n">02</div><div class="k">Learn &amp; Refine</div><p>Deconstruct hard sentences, study CEFR lessons, and upgrade your academic writing with colour-coded feedback.</p></div>
+          <div class="l-step" data-step="3"><div class="n">03</div><div class="k">Speak &amp; Deliver</div><p>Rehearse with a live AI speaking and pitch coach, then lock it in with spaced repetition and CEFR exams.</p></div>
         </div>
       </div>
       <div class="l-foot"><button class="l-pill solid" data-land="enter">Launch Workspace &#8599;</button></div>
@@ -1315,18 +1317,18 @@ html.land #workspaceApp { display:none !important; }
       </div>
     </div>
     <nav id="nav" class="px-2 pb-2" aria-label="Sections">
-      <div class="nav-h">Overview</div>
-      <button class="nav-i" data-nav="dash" data-tone="em"><i data-lucide="layout-dashboard" class="w-4 h-4"></i>Dashboard</button>
-      <div class="nav-h">Academic Studios</div>
-      <button class="nav-i" data-nav="paper" data-tone="em"><i data-lucide="book-open-text" class="w-4 h-4"></i>Paper &amp; Concepts Studio</button>
-      <button class="nav-i" data-nav="code" data-tone="co"><i data-lucide="square-terminal" class="w-4 h-4"></i>Code &amp; Logic Studio</button>
-      <button class="nav-i" data-nav="pres" data-tone="vi"><i data-lucide="presentation" class="w-4 h-4"></i>Presentations &amp; Pitch Studio</button>
-      <button class="nav-i" data-nav="research" data-tone="co"><i data-lucide="telescope" class="w-4 h-4"></i>Research Plan Architect</button>
-      <div class="nav-h">English Proficiency Wing</div>
+      <div class="nav-h">English &amp; Communication</div>
+      <button class="nav-i" data-nav="lab" data-tab="level_lesson" data-tone="am"><i data-lucide="graduation-cap" class="w-4 h-4"></i>CEFR Level Lessons</button>
       <button class="nav-i" data-nav="lab" data-tab="deconstruct" data-tone="am"><i data-lucide="scan-text" class="w-4 h-4"></i>Sentence Deconstructor</button>
       <button class="nav-i" data-nav="lab" data-tab="upgrade" data-tone="am"><i data-lucide="wand-sparkles" class="w-4 h-4"></i>Academic Writing Upgrade</button>
-      <button class="nav-i" data-nav="lab" data-tab="level_lesson" data-tone="am"><i data-lucide="graduation-cap" class="w-4 h-4"></i>CEFR Level Lessons</button>
       <button class="nav-i" data-nav="lab" data-tab="exam" data-tone="am"><i data-lucide="award" class="w-4 h-4"></i>CEFR Language Exam</button>
+      <button class="nav-i" data-nav="pres" data-tone="vi"><i data-lucide="presentation" class="w-4 h-4"></i>Presentations &amp; Pitch Studio</button>
+      <div class="nav-h">Overview</div>
+      <button class="nav-i" data-nav="dash" data-tone="em"><i data-lucide="layout-dashboard" class="w-4 h-4"></i>Dashboard</button>
+      <div class="nav-h">More Studios</div>
+      <button class="nav-i" data-nav="paper" data-tone="em"><i data-lucide="book-open-text" class="w-4 h-4"></i>Paper &amp; Concepts Studio</button>
+      <button class="nav-i" data-nav="code" data-tone="co"><i data-lucide="square-terminal" class="w-4 h-4"></i>Code &amp; Logic Studio</button>
+      <button class="nav-i" data-nav="research" data-tone="co"><i data-lucide="telescope" class="w-4 h-4"></i>Research Plan Architect</button>
     </nav>
     <div class="px-4 pt-3 pb-1.5 flex items-center justify-between border-t border-line">
       <span class="nav-h" style="padding:0">History</span>
@@ -1602,10 +1604,11 @@ html.land #workspaceApp { display:none !important; }
 
 <!-- ================= MOBILE BOTTOM TAB BAR (<= 768px) ================= -->
 <nav id="tabbar" class="no-print" aria-label="App navigation">
+  <button data-tabws="lab"><i data-lucide="languages"></i><span>English</span></button>
+  <button data-tabws="pres"><i data-lucide="presentation"></i><span>Pitch</span></button>
   <button data-tabws="dash"><i data-lucide="house"></i><span>Home</span></button>
   <button data-tabws="paper"><i data-lucide="book-open-text"></i><span>Papers</span></button>
   <button data-tabws="code"><i data-lucide="square-terminal"></i><span>Code</span></button>
-  <button data-tabws="lab"><i data-lucide="languages"></i><span>English</span></button>
   <button data-tabmenu aria-expanded="false" aria-controls="sidebar"><i data-lucide="menu"></i><span>Menu</span></button>
 </nav>
 <div id="chat-scrim" class="no-print" aria-hidden="true"></div>
@@ -2236,11 +2239,11 @@ const SUBJECT_KEY = 'nexascholar_subject_area';
 const SUBJECT_AREAS = ['stem', 'humanities', 'general'];
 function loadSubjectArea() {
   const v = String(ls.get(SUBJECT_KEY) || '').trim().toLowerCase();
-  return SUBJECT_AREAS.includes(v) ? v : 'general';          // General only when nothing valid was saved
+  return SUBJECT_AREAS.includes(v) && v !== 'stem' ? v : 'general';   // STEM pill is hidden in the English build          // General only when nothing valid was saved
 }
 
 /* Each studio keeps its own active session, inputs, chat, diagram and deck state. */
-const state = { ws: 'dash', lab: ['deconstruct', 'upgrade', 'level_lesson'].includes(ls.get('nexascholar.lab')) ? ls.get('nexascholar.lab') : 'deconstruct' };
+const state = { ws: 'lab', lab: 'level_lesson' };                    // English build: always open on CEFR Level Lessons
 const W = {
   paper: { activeId: null, files: [], busy: false, chatBusy: false, abort: null, deckIdx: 0, lex: ls.get('nexascholar.lex') === 'deck' ? 'deck' : 'grid', tick: null,
            domain: loadSubjectArea(), reg: 'academic' },
@@ -4569,10 +4572,9 @@ function landStep(n) {
 }
 function landEnter(ws, tab) { landingHide(); setWorkspace(ws || state.ws || 'dash', tab); }
 function landSample() {
-  landingHide(); setWorkspace('paper');
-  const w = $('#paste-wrap'); if (w) { w.classList.remove('hidden'); const c = $('#paste-chev'); if (c) c.style.transform = 'rotate(180deg)'; }
-  $('#paste-paper').value = SAMPLE_TEXT; const cc = $('#char-count'); if (cc) cc.textContent = SAMPLE_TEXT.length.toLocaleString();
-  if (!W.paper.busy) runPaper();
+  landingHide(); setWorkspace('lab', 'deconstruct');
+  labAct('lab-sample');
+  if (!L.busy) labRun();
 }
 landEl.addEventListener('click', e => {
   const el = e.target.closest('[data-land]'); if (!el) return;

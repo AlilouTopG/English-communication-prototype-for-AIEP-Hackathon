@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pypdf
+pypdfium2
+groq
+python-dotenv
+pillow
+edge-tts

@@ -1,0 +1,3 @@
+D:\projects\nexascholar-ai\requirements.txt
+D:\projects\nexascholar-ai\templates\index.html
+D:\projects\nexascholar-ai\static\favicon.svg

@@ -1,0 +1,275 @@
+{
+  "nodes": [
+    {
+      "id": "requirements",
+      "label": "requirements.txt dependency manifest",
+      "file_type": "document",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_fastapi",
+      "label": "FastAPI (web framework dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 1,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_uvicorn",
+      "label": "Uvicorn (ASGI server dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 2,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_python_multipart",
+      "label": "python-multipart (form upload parsing dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 3,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_pypdf",
+      "label": "pypdf (PDF text extraction dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 4,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_groq",
+      "label": "groq (LLM API client dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 5,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_python_dotenv",
+      "label": "python-dotenv (environment config dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 6,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_pillow",
+      "label": "Pillow (image processing dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 7,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "requirements_edge_tts",
+      "label": "edge-tts (text-to-speech dependency)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 8,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_favicon_svg",
+      "label": "NexaScholar AI favicon (SVG logo)",
+      "file_type": "image",
+      "source_file": "D:\\projects\\nexascholar-ai\\static\\favicon.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_favicon_svg_network_motif",
+      "label": "Node-link network motif (N-shaped graph of four nodes)",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\static\\favicon.svg",
+      "source_location": 10,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "static_favicon_svg_brand_gradient",
+      "label": "Green-to-blue brand gradient with glow filter on dark rounded square",
+      "file_type": "concept",
+      "source_file": "D:\\projects\\nexascholar-ai\\static\\favicon.svg",
+      "source_location": 3,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "requirements",
+      "target": "requirements_fastapi",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 1,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_uvicorn",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 2,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_python_multipart",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 3,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_pypdf",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 4,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_groq",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 5,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_python_dotenv",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 6,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_pillow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 7,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements",
+      "target": "requirements_edge_tts",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": 8,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements_fastapi",
+      "target": "requirements_uvicorn",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "requirements_pypdf",
+      "target": "requirements_pillow",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "D:\\projects\\nexascholar-ai\\requirements.txt",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "static_favicon_svg",
+      "target": "static_favicon_svg_network_motif",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\static\\favicon.svg",
+      "source_location": 10,
+      "weight": 1.0
+    },
+    {
+      "source": "static_favicon_svg",
+      "target": "static_favicon_svg_brand_gradient",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "D:\\projects\\nexascholar-ai\\static\\favicon.svg",
+      "source_location": 3,
+      "weight": 1.0
+    },
+    {
+      "source": "static_favicon_svg_network_motif",
+      "target": "static_favicon_svg_brand_gradient",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "D:\\projects\\nexascholar-ai\\static\\favicon.svg",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "coverage": {
+    "D:\\projects\\nexascholar-ai\\requirements.txt": 8,
+    "D:\\projects\\nexascholar-ai\\static\\favicon.svg": 15
+  }
+}
